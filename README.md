@@ -16,7 +16,13 @@
   <img src="https://i.imgur.com/dBaSKWF.gif" height="20" width="100%">
 </div>
 
-<h1>Live</h1>
+## Live Application URL
+
+
+The Application is deployed in https://rashidkhan1234567.github.io/Chat-App/
+
+Click on the link to see the application
+
 
 <div align="left">
     <div align="left">
