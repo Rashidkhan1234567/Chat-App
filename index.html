@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link  rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="style.css" />
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <title>Chat App</title>
+  </head>
+  <body id="body" class="bg-slate-700 h-screen w--screen grid place-content-center">
+    <!-- <div class="lds-ellipsis" id="preloader"><div></div><div></div><div></div><div></div></div> -->
+    <div id="chat" class="chat min-w-[700px] h-[600px] bg-gray-900  flex gap-10 px-[50px] flex-col pt-8 "  >
+      <div class="messages h-[80%] w-[100%] bg-slate-600 border-2 border-emerald-300 rounded-md" id="messages" >
+        <!-- <div class="messages-container" id="messages-container"></div> -->
+      </div>
+ 
+     <div class="reply rounded-sm">
+      <input type="text" class="input" id="input" translate="yes"  autocomplete="username" aria-autocomplete="both" autocapitalize="true" placeholder="Type messages">
+    <button type="button" id="btn" class="btn">Send</button>
+     </div>
+    </div>        
+    <script src="script.js"></script>
+  </body>
+</html>
+ 

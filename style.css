@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.messages-container {
+  clip-path: polygon(12% 100%, 13% 18%, 0 0, 31% 0, 100% 0, 98% 100%);
+  height: max-content;
+  width: max-content;
+  padding: 10px 30px 10px 40px;
+  background-color: aqua;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+
+.messages {
+  overflow-y: scroll;
+  box-shadow: 0px 0px 10px #8f8f8fd3;
+}
+
+.messages::-webkit-scrollbar {
+  background-color: transparent;
+  width: 10px;
+  
+}
+.messages::-webkit-scrollbar-thumb{
+  background-color: lightblue;
+  border-radius: 10px;
+  border: 1px solid rgb(46, 45, 45);
+}
+
+.messages .messages-container:nth-child(odd) {
+  clip-path: polygon(87% 100%, 88% 20%, 100% 0, 75% 0, 0 0, 2% 100%);
+  height: max-content;
+  width: max-content;
+  padding: 10px 40px 10px 30px;
+  background-color: aqua;
+  margin-left: auto;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+
+.messages .messages-container:nth-child(even) {
+  clip-path: polygon(12% 100%, 13% 18%, 0 0, 31% 0, 100% 0, 98% 100%);
+  height: max-content;
+  width: max-content;
+  padding: 10px 30px 10px 40px;
+  background-color: aqua;
+  margin-left: 20px;
+  margin-right: auto;
+  margin-top: 20px;
+}
+
+.reply {
+  width: 100%;
+  height: 15%;
+  margin-top: -25px;
+
+  input {
+    width: 75%;
+    height: 40px;
+    border-radius: 10px 0px 0px 10px;
+    padding: 0px 10px;
+    margin-top: 20px;
+    outline: none;
+  }
+
+  button {
+    width: 24%;
+    height: 40px;
+    background-color: rgb(0, 26, 255);
+    color: #fff;
+    font-size: 19px;
+    margin-left: -4px;
+    border-radius: 0px 10px 10px 0px;
+    cursor: pointer;
+    outline: none;
+
+    &:hover {
+      background-color: rgb(0, 4, 255);
+    }
+  }
+}
+
+.chat{
+  box-shadow: 0px 0px 20px aqua, 0px 0px 30px #fff,0px 0px 50px aqua;
+  animation: ani 1s alternate infinite;
+position: relative;
+border-radius: 10px;
+
+}
+
+@keyframes ani {
+  to{
+  box-shadow: 0px 0px 20px aqua, 0px 0px 30px #fff,0px 0px 50px aqua;
+  }from{
+  box-shadow: 0px 0px 20px lightseagreen, 0px 0px 30px aqua,0px 0px 50px lightseagreen;
+  }
+}
